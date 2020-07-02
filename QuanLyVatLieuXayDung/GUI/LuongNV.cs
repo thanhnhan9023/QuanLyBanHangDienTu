@@ -40,7 +40,7 @@ namespace QuanLyVatLieuXayDung.GUI
             if (dateNgayKetThuc.EditValue.ToString() != null)
             {
                 DateTime ngayvaolam = DateTime.Parse(lblNgayVaoLam.Text);
-                DateTime ngaykethuc = Convert.ToDateTime(dateNgayKetThuc.EditValue.ToString());
+                DateTime ngaykethuc = DateTime.Parse(dateNgayKetThuc.EditValue.ToString());
                 TimeSpan diff2 = ngaykethuc - ngayvaolam;
                 int songaylam = (int)diff2.TotalDays;
                 if (songaylam <= 0)

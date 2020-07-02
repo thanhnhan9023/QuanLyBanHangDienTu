@@ -47,6 +47,8 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.cboNhanVien = new System.Windows.Forms.ComboBox();
+            this.ckTrangthai = new System.Windows.Forms.CheckBox();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
@@ -267,12 +269,33 @@
             this.cboNhanVien.TabIndex = 9;
             this.cboNhanVien.SelectionChangeCommitted += new System.EventHandler(this.cboNhanVien_SelectionChangeCommitted);
             // 
+            // ckTrangthai
+            // 
+            this.ckTrangthai.AutoSize = true;
+            this.ckTrangthai.Location = new System.Drawing.Point(604, 240);
+            this.ckTrangthai.Name = "ckTrangthai";
+            this.ckTrangthai.Size = new System.Drawing.Size(18, 17);
+            this.ckTrangthai.TabIndex = 10;
+            this.ckTrangthai.UseVisualStyleBackColor = true;
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl6.Appearance.Options.UseFont = true;
+            this.labelControl6.Location = new System.Drawing.Point(515, 236);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(80, 21);
+            this.labelControl6.TabIndex = 12;
+            this.labelControl6.Text = "Trang Thái";
+            // 
             // NhanVienND
             // 
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1120, 1049);
+            this.Controls.Add(this.labelControl6);
+            this.Controls.Add(this.ckTrangthai);
             this.Controls.Add(this.cboNhanVien);
             this.Controls.Add(this.cboUserName);
             this.Controls.Add(this.txtChucVu);
@@ -328,5 +351,7 @@
         private System.Windows.Forms.ComboBox cboNhanVien;
         private DevExpress.XtraGrid.GridControl dsquantri;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private System.Windows.Forms.CheckBox ckTrangthai;
+        private DevExpress.XtraEditors.LabelControl labelControl6;
     }
 }

@@ -308,7 +308,7 @@
             "Người Dùng",
             "Quản Lý",
             "Quản Trị Người Dùng"});
-            this.cboNguoiDung.Location = new System.Drawing.Point(172, 126);
+            this.cboNguoiDung.Location = new System.Drawing.Point(173, 126);
             this.cboNguoiDung.Name = "cboNguoiDung";
             this.cboNguoiDung.Size = new System.Drawing.Size(176, 29);
             this.cboNguoiDung.TabIndex = 1;

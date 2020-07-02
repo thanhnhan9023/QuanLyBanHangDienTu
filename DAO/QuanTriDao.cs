@@ -69,6 +69,11 @@ namespace DAO
             string sql = "update QuanTriNguoiDung  set UserName='"+accountqt.Username+"' ,MANV='"+accountqt.Manv+"',MaCV='"+accountqt.Macv+"'   where ID_I='"+accountqt.ID_quantri1+"'";
             return Dataprovider.Instance.thucthicaulenhsql(sql);
         }
+        //public bool updatetraithaitaikhoan(AccoutQuanTri accountqt,bool trangthai)
+        //{
+        //    string sql = "update NguoiDung set Active='"+trangthai.ToString()"' where UserName='"+accountqt.Username+"'";
+        //    return Dataprovider.Instance.thucthicaulenhsql(sql);
+        //}
         public string laymachucvu(string ma)
         {
             string sql = "select MaCv from ChucVu where TenCv=N'"+ma+"'";

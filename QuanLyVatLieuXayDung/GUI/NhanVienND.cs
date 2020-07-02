@@ -54,6 +54,8 @@ namespace QuanLyVatLieuXayDung.GUI
         }
         public void bind()
         {
+            cboUserName.DataBindings.Clear();
+            cboUserName.DataBindings.Add("Text", dsquantri.DataSource, "UserName");
             txtChucVu.DataBindings.Clear();
             txtChucVu.DataBindings.Add("Text", dsquantri.DataSource, "TenCv");
             cboNhanVien.DataBindings.Clear();

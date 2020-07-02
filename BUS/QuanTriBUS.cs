@@ -68,6 +68,10 @@ namespace BUS
         {
             return QuanTriDao.Instance.laymachucvu(ma);
         }
+        //public bool updatetraithaitaikhoan(AccoutQuanTri accountqt, bool trangthai)
+        //{
+        //    return QuanTriDao.Instance.updatetraithaitaikhoan(accountqt, trangthai);
+        //}
 
         public string NextID()
         {
