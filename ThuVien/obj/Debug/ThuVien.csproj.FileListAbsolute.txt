@@ -81,3 +81,4 @@ D:\Lap Trinh HuFi\Ung Dung Thong Minh\QuanLyBanHangDienTu\ThuVien\bin\Debug\ru\D
 D:\Lap Trinh HuFi\Ung Dung Thong Minh\QuanLyBanHangDienTu\ThuVien\obj\Debug\ThuVien.dll.licenses
 D:\Lap Trinh HuFi\Ung Dung Thong Minh\QuanLyBanHangDienTu\ThuVien\obj\Debug\ThuVien.dll
 D:\Lap Trinh HuFi\Ung Dung Thong Minh\QuanLyBanHangDienTu\ThuVien\obj\Debug\ThuVien.pdb
+D:\Lap Trinh HuFi\Ung Dung Thong Minh\QuanLyBanHangDienTu\ThuVien\obj\Debug\ThuVien.csprojResolveAssemblyReference.cache

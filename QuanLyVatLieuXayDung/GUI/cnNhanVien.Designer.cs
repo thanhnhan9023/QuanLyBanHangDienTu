@@ -59,10 +59,10 @@
             this.dsNhanVien = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
             this.btnSua = new DevExpress.XtraEditors.SimpleButton();
             this.btnThem = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ckTrangthai.Properties)).BeginInit();
@@ -135,7 +135,7 @@
             this.ckTrangthai.Location = new System.Drawing.Point(715, 192);
             this.ckTrangthai.Name = "ckTrangthai";
             this.ckTrangthai.Properties.Caption = "";
-            this.ckTrangthai.Size = new System.Drawing.Size(94, 24);
+            this.ckTrangthai.Size = new System.Drawing.Size(94, 19);
             this.ckTrangthai.TabIndex = 37;
             this.ckTrangthai.CheckedChanged += new System.EventHandler(this.ckTrangthai_CheckedChanged);
             // 
@@ -432,11 +432,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dsNhanVien.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
-            this.dsNhanVien.Location = new System.Drawing.Point(20, 313);
+            this.dsNhanVien.Location = new System.Drawing.Point(20, 312);
             this.dsNhanVien.MainView = this.gridView1;
             this.dsNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.dsNhanVien.Name = "dsNhanVien";
-            this.dsNhanVien.Size = new System.Drawing.Size(1128, 467);
+            this.dsNhanVien.Size = new System.Drawing.Size(1128, 514);
             this.dsNhanVien.TabIndex = 2;
             this.dsNhanVien.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -446,6 +446,7 @@
             this.gridView1.DetailHeight = 431;
             this.gridView1.GridControl = this.dsNhanVien;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.Editable = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
             // groupControl2
@@ -460,6 +461,15 @@
             this.groupControl2.Size = new System.Drawing.Size(200, 298);
             this.groupControl2.TabIndex = 5;
             this.groupControl2.Text = "Chức năng";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(27, 251);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(147, 29);
+            this.simpleButton1.TabIndex = 3;
+            this.simpleButton1.Text = "Thêm Chức Vụ";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // btnXoa
             // 
@@ -500,15 +510,6 @@
             this.btnThem.Text = "Thêm";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Location = new System.Drawing.Point(27, 251);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(147, 29);
-            this.simpleButton1.TabIndex = 3;
-            this.simpleButton1.Text = "Thêm Chức Vụ";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
-            // 
             // cnNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -518,7 +519,7 @@
             this.Controls.Add(this.groupControl1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "cnNhanVien";
-            this.Size = new System.Drawing.Size(1148, 554);
+            this.Size = new System.Drawing.Size(1148, 787);
             this.Load += new System.EventHandler(this.cnNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);

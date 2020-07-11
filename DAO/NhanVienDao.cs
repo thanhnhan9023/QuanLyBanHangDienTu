@@ -41,7 +41,7 @@ namespace DAO
 
         public bool sua1nhanvien(NhanVienc nv)
         {
-            string sql = "SET DATEFORMAT dmy  update NhanVien set TenNV=N'" + nv.Tennv+"',GioiTinh=N'"+nv.Gioitinh+"',NgaySinh='"+nv.Ngaysinh+"',DiaChi=N'"+nv.Diachi+"',SDT='"+nv.Sdt+ "',NgayVaoLam='"+nv.Ngayvaolam+"',MaCV ='"+nv.Macv+"',TinhTrang='" + nv.Tinhtrang+"' where MANV='"+nv.Manv+"'";
+            string sql = "update NhanVien set TenNV=N'" + nv.Tennv+"',GioiTinh=N'"+nv.Gioitinh+"',NgaySinh='"+nv.Ngaysinh+"',DiaChi=N'"+nv.Diachi+"',SDT='"+nv.Sdt+ "',NgayVaoLam='"+nv.Ngayvaolam+"',MaCV ='"+nv.Macv+"',TinhTrang='" + nv.Tinhtrang+"' where MANV='"+nv.Manv+"'";
             return Dataprovider.Instance.thucthicaulenhsql(sql);
         }
         public bool xoa1nhanvien(NhanVienc nv)

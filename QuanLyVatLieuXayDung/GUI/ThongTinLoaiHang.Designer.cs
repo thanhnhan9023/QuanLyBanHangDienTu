@@ -109,11 +109,13 @@
             this.dsLoaihang.TabIndex = 0;
             this.dsLoaihang.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.dsLoaihang.Click += new System.EventHandler(this.dsLoaihang_Click);
             // 
             // gridView1
             // 
             this.gridView1.GridControl = this.dsLoaihang;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.Editable = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridView1_RowCellClick);
             // 
@@ -199,7 +201,7 @@
             this.ckTranThai.Location = new System.Drawing.Point(572, 169);
             this.ckTranThai.Name = "ckTranThai";
             this.ckTranThai.Properties.Caption = "";
-            this.ckTranThai.Size = new System.Drawing.Size(39, 24);
+            this.ckTranThai.Size = new System.Drawing.Size(39, 19);
             this.ckTranThai.TabIndex = 4;
             this.ckTranThai.CheckedChanged += new System.EventHandler(this.ckTranThai_CheckedChanged);
             // 

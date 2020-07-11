@@ -24,20 +24,20 @@ namespace QuanLyVatLieuXayDung.GUI
         {
             if (t)
             {
-
-                txtTenKhachHang.Enabled = false;
-                txtDiaChi.Enabled = false;
-                txtSoDienThoai.Enabled = false;
-                Btnluu.Enabled = false;
+               // txtMaKhachHang.Enabled = t;
+                txtTenKhachHang.Enabled = t;
+                txtDiaChi.Enabled = t;
+                txtSoDienThoai.Enabled = t;
+                Btnluu.Enabled = t;
             }
             else
             {
 
 
-                txtTenKhachHang.Enabled = true;
-                txtDiaChi.Enabled = true;
-                txtSoDienThoai.Enabled = true;
-                Btnluu.Enabled = true;
+                txtTenKhachHang.Enabled = t;
+                txtDiaChi.Enabled = t;
+                txtSoDienThoai.Enabled = t;
+                Btnluu.Enabled = t;
             }
         }
         public void loadview()
@@ -47,14 +47,16 @@ namespace QuanLyVatLieuXayDung.GUI
             gridView1.Columns[1].Caption = "Tên Khách Hàng";
             gridView1.Columns[2].Caption = "Địa Chỉ";
             gridView1.Columns[3].Caption = "Số Điện Thoại";
+        //  gridView1.Red
         }
 
         private void KhachHangc_Load(object sender, EventArgs e)
         {
-            txtTenKhachHang.Enabled = false;
-            hienthi(true);
+            txtMaKhachHang.Enabled = false;
+            hienthi(false);
             loadview();
-            bind();
+           // bind();
+          
 
         }
 
@@ -97,9 +99,11 @@ namespace QuanLyVatLieuXayDung.GUI
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            hienthi(false);
+            hienthi(true);
+            txtMaKhachHang.Enabled = false;
             add = false;
             update = true;
+            bind();
         }
         public bool kiemtraso(string x)
         {
@@ -116,8 +120,8 @@ namespace QuanLyVatLieuXayDung.GUI
         {
             if (add)
             {
-                DialogResult rs;
-                rs = XtraMessageBox.Show("Bạn Có Muốn Thêm Không", "Thêm", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+                //DialogResult rs;
+                //rs = XtraMessageBox.Show("Bạn Có Muốn Thêm Không", "Thêm", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
 
 
                 if (txtTenKhachHang.Text.Length <= 0)
@@ -135,7 +139,7 @@ namespace QuanLyVatLieuXayDung.GUI
                 }
                 else
                 {
-                    if (rs == DialogResult.Yes)
+                    //if (rs == DialogResult.Yes)
 
                         if (BUS.KhachHangBUS.Instance.themmotkhachhang(txtMaKhachHang.Text, txtTenKhachHang.Text, txtDiaChi.Text, txtSoDienThoai.Text))
                         {
@@ -206,7 +210,8 @@ namespace QuanLyVatLieuXayDung.GUI
             add = true;
             update = false;
             resetvalue();
-            hienthi(false);
+         //   txtMaKhachHang.Enabled = true;
+            hienthi(true);
             if (gridView1.DataRowCount <= 0)
             {
                 txtMaKhachHang.Text = "KH001";

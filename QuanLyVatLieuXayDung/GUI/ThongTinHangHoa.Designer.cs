@@ -172,6 +172,7 @@
             this.gridColumn5});
             this.gridView1.GridControl = this.dshang;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.Editable = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn1
@@ -289,7 +290,7 @@
             this.btnThem.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.Appearance.Options.UseFont = true;
             this.btnThem.ImageOptions.Image = global::QuanLyVatLieuXayDung.Properties.Resources.add32;
-            this.btnThem.Location = new System.Drawing.Point(113, 58);
+            this.btnThem.Location = new System.Drawing.Point(113, 49);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(107, 40);
             this.btnThem.TabIndex = 5;

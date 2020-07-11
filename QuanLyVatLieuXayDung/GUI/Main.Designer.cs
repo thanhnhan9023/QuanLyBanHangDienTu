@@ -90,11 +90,11 @@
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.skinRibbonGalleryBarItem3 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.skinDropDownButtonItem1 = new DevExpress.XtraBars.SkinDropDownButtonItem();
-            this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
@@ -149,13 +149,11 @@
             // navBarGroup1
             // 
             this.navBarGroup1.Caption = "navBarGroup1";
-            this.navBarGroup1.Expanded = true;
             this.navBarGroup1.Name = "navBarGroup1";
             // 
             // navBarGroup2
             // 
             this.navBarGroup2.Caption = "navBarGroup2";
-            this.navBarGroup2.Expanded = true;
             this.navBarGroup2.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem1),
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem2)});
@@ -174,7 +172,6 @@
             // navBarGroup3
             // 
             this.navBarGroup3.Caption = "navBarGroup3";
-            this.navBarGroup3.Expanded = true;
             this.navBarGroup3.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem3),
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem4)});
@@ -703,10 +700,12 @@
             this.skinDropDownButtonItem1.Id = 30;
             this.skinDropDownButtonItem1.Name = "skinDropDownButtonItem1";
             // 
-            // ribbonPageGroup12
+            // barButtonItem6
             // 
-            this.ribbonPageGroup12.ItemLinks.Add(this.btnXuatHang);
-            this.ribbonPageGroup12.Name = "ribbonPageGroup12";
+            this.barButtonItem6.Caption = "Thống Kê ";
+            this.barButtonItem6.Id = 35;
+            this.barButtonItem6.Name = "barButtonItem6";
+            this.barButtonItem6.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6_ItemClick_1);
             // 
             // ribbonPage3
             // 
@@ -727,12 +726,10 @@
             this.ribbonPageGroup14.Name = "ribbonPageGroup14";
             this.ribbonPageGroup14.Text = "ribbonPageGroup14";
             // 
-            // barButtonItem6
+            // ribbonPageGroup12
             // 
-            this.barButtonItem6.Caption = "Thống Kê ";
-            this.barButtonItem6.Id = 35;
-            this.barButtonItem6.Name = "barButtonItem6";
-            this.barButtonItem6.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6_ItemClick_1);
+            this.ribbonPageGroup12.ItemLinks.Add(this.btnXuatHang);
+            this.ribbonPageGroup12.Name = "ribbonPageGroup12";
             // 
             // s
             // 

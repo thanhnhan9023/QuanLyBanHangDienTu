@@ -277,7 +277,8 @@ namespace QuanLyVatLieuXayDung.GUI
             txtMaHH.Text = "";
             txtTenHH.Text = "";
             txtXuatXu.Text = "";
-            txtDvt.Text = "";
+            txtDvt.Text="";
+            txtFild.Text = "";
            
            
 
@@ -323,7 +324,7 @@ namespace QuanLyVatLieuXayDung.GUI
         {
             add = true;
             resetvalues();
-
+            txtFild.Text = null;
             
             hienthi(false);
             if (gridView1.DataRowCount <= 0)

@@ -202,6 +202,11 @@ namespace QuanLyVatLieuXayDung.GUI
         
         }
 
+        private void dsLoaihang_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void ckTranThai_CheckedChanged(object sender, EventArgs e)
         {
             if(ckTranThai.Checked)

@@ -135,3 +135,4 @@ D:\Lap Trinh HuFi\Ung Dung Thong Minh\QuanLyBanHangDienTu\DT0\obj\Debug\DT0.Prop
 D:\Lap Trinh HuFi\Ung Dung Thong Minh\QuanLyBanHangDienTu\DT0\obj\Debug\DT0.csproj.GenerateResource.Cache
 D:\Lap Trinh HuFi\Ung Dung Thong Minh\QuanLyBanHangDienTu\DT0\obj\Debug\DT0.exe
 D:\Lap Trinh HuFi\Ung Dung Thong Minh\QuanLyBanHangDienTu\DT0\obj\Debug\DT0.pdb
+D:\Lap Trinh HuFi\Ung Dung Thong Minh\QuanLyBanHangDienTu\DT0\obj\Debug\DT0.csprojResolveAssemblyReference.cache

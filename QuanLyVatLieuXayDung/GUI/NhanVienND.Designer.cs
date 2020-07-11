@@ -105,6 +105,7 @@
             // 
             this.gridView1.GridControl = this.dsquantri;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.Editable = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
             // btnThem

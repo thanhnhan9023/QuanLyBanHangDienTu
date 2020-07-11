@@ -42,7 +42,7 @@ namespace QuanLyVatLieuXayDung.GUI
             nv.Manv = txtMaNV.Text;
             nv.Tennv = txtHoTenNV.Text;
             nv.Diachi = txtDiaChi.Text;
-            nv.Ngaysinh = Convert.ToDateTime(dateNgaySinh.EditValue.ToString());
+            nv.Ngaysinh = DateTime.Parse(dateNgaySinh.EditValue.ToString());
             nv.Gioitinh = cboGioiTinh.SelectedItem.ToString();
             nv.Sdt = txtSdt.Text;
             nv.Macv = cboChuVu.SelectedValue.ToString();
